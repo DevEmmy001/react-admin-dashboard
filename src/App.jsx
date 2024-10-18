@@ -1,14 +1,12 @@
-import { useState } from 'react'
-
-
+import { useState } from "react";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-<div><p>hello</p></div>
+      <h1 className="text-6xl font-bold">
+        <p>idiot</p>
+      </h1>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
