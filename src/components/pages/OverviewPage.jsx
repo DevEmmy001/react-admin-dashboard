@@ -3,6 +3,7 @@ import Header from "../common/Header";
 import StatCard from "../common/StatCard";
 import { motion } from "framer-motion";
 import { BarChart2, ShoppingBag, Users, Zap } from "lucide-react";
+import SalesOverviewChart from "../overview/SalesOverviewChart";
 const OverviewPage = () => {
   return (
     <>
@@ -42,7 +43,10 @@ const OverviewPage = () => {
             />
           </motion.div>
           {/* charts section */}
-          <div></div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <SalesOverviewChart />
+            <CategoryDistributionChart />
+          </div>
         </main>
       </div>
     </>
