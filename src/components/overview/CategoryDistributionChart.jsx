@@ -10,10 +10,10 @@ import {
 } from "recharts";
 const categoryData = [
   { name: "Laptops", value: 4500 },
-  { name: "SSD Storage", value: 3200 },
-  { name: "Wifi Router", value: 2800 },
-  { name: "IGhub Shirts for Developers", value: 2100 },
-  { name: "External Devices", value: 1900 },
+  { name: "Storage", value: 3200 },
+  { name: "Wifi", value: 2800 },
+  { name: "IGhub Shirts", value: 2100 },
+  { name: "External", value: 1900 },
 ];
 
 const COLORS = ["#6366F1", "#8B5CF6", "#EC4899", "#10B981", "#F59E0B"];
