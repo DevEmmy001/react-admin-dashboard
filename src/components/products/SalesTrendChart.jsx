@@ -48,12 +48,12 @@ const SalesTrendChart = () => {
               itemStyle={{ color: "#E5E7EB" }}
             />
             <Line
-              type="monotone"
+              type="bump"
               dataKey="Sales"
               stroke="#6366F1"
               strokeWidth={3}
-              dot={{ fill: "#6366F1", strokeWidth: 2, r: 6 }}
-              activeDot={{ r: 8, strokeWidth: 2 }}
+              dot={{ fill: "#6366F1", strokeWidth: 2, r: 2 }}
+              activeDot={{ r: 4, strokeWidth: 2 }}
             />
           </LineChart>
         </ResponsiveContainer>

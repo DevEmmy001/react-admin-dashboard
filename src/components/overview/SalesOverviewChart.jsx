@@ -37,7 +37,7 @@ const SalesOverviewChart = () => {
       <div className="h-80">
         <ResponsiveContainer width={"100%"} height={"100%"}>
           <LineChart data={salesData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#4B5563" />
+            {/* <CartesianGrid strokeDasharray="3 3" stroke="#4B5563" /> */}
             <XAxis dataKey={"name"} stroke="#9ca3af" />
             <YAxis stroke="#9ca3af" />
             <Tooltip
@@ -48,12 +48,12 @@ const SalesOverviewChart = () => {
               itemStyle={{ color: "#E5E7EB" }}
             />
             <Line
-              type="monotone"
+              type="bump"
               dataKey="Sales"
               stroke="#6366F1"
               strokeWidth={3}
-              dot={{ fill: "#6366F1", strokeWidth: 2, r: 6 }}
-              activeDot={{ r: 8, strokeWidth: 2 }}
+              dot={{ fill: "#6366F1", strokeWidth: 2, r: 2 }}
+              activeDot={{ r: 4, strokeWidth: 2 }}
             />
           </LineChart>
         </ResponsiveContainer>
