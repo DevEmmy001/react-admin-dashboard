@@ -35,7 +35,7 @@ const CategoryDistributionChart = () => {
               data={categoryData}
               cx={"50%"}
               cy={"50%"}
-              labelLine={true}
+              labelLine={false}
               outerRadius={80}
               fill="#884d8"
               dataKey="value"

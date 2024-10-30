@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import Header from "../common/Header";
 import StatCard from "../common/StatCard";
-import ProductTable from "../products/ProductTable";
+import ProductsTable from "../products/ProductsTable";
 import { AlertTriangle, DollarSign, Package, TrendingUp } from "lucide-react";
 import CategoryDistributionChart from "../overview/CategoryDistributionChart";
 import SalesTrendChart from "../products/SalesTrendChart";
@@ -22,7 +22,7 @@ const ProductsPage = () => {
           <StatCard
             name="Total Products"
             icon={Package}
-            value={1234}
+            value={"1,578"}
             color="#6366F1"
           />
           <StatCard
@@ -44,7 +44,7 @@ const ProductsPage = () => {
             color="#EF4444"
           />
         </motion.div>
-        <ProductTable />
+        <ProductsTable />
         {/* CHARTS */}
         <div className="grid grid-col-1 lg:grid-cols-2 gap-8">
           <SalesTrendChart />
